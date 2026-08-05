@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&family=Petit+Formal+Script&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* ---- Colour system: "Confectionery Atelier", now with a PeaceTreats pink ---- */
+  --color-ganache: #2b1810;
+  --color-ganache-deep: #1c0f09;
+  --color-ivory: #fbf6ee;
+  --color-ivory-soft: #f3ead9;
+  --color-rose: #cf9a8d;
+  --color-rose-deep: #b97d6f;
+  --color-gold: #c9a961;
+  --color-gold-light: #e6d3a1;
+  --color-gold-deep: #a5813f;
+  --color-sage: #97a884;
+  --color-charcoal: #241c17;
+  --color-hairline: #e6dac8;
+  --color-hairline-dark: #4a352a;
+
+  --color-pink: #e59aae;         /* PeaceTreats pink — glass tint + secondary accent */
+  --color-pink-deep: #c4667e;
+  --color-pink-light: #fbd9e2;
+  --color-pink-soft: #fdf0f3;    /* near-white pink for light glass grounds */
+
+  --font-display: 'Fraunces', ui-serif, Georgia, serif;
+  --font-body: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+  --font-signature: 'Petit Formal Script', cursive;
+
+  --shadow-card: 0 1px 2px rgba(43, 24, 16, 0.06), 0 12px 32px -12px rgba(43, 24, 16, 0.18);
+  --shadow-card-hover: 0 4px 10px rgba(43, 24, 16, 0.08), 0 28px 56px -18px rgba(43, 24, 16, 0.32);
+  --shadow-glass: 0 8px 32px -8px rgba(196, 102, 126, 0.25), inset 0 1px 0 rgba(255,255,255,0.5);
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: var(--color-ivory);
+    background-image:
+      radial-gradient(ellipse 60% 40% at 15% 0%, rgba(229,154,174,0.16), transparent 60%),
+      radial-gradient(ellipse 50% 35% at 100% 20%, rgba(229,154,174,0.12), transparent 60%);
+    background-attachment: fixed;
+    color: var(--color-charcoal);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+  ::selection {
+    background-color: var(--color-pink-light);
+    color: var(--color-ganache);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-gold-deep);
+    outline-offset: 3px;
+  }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .eyebrow {
+    font-family: var(--font-body);
+    font-weight: 700;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+  }
+  .signature-word {
+    font-family: var(--font-signature);
+    font-weight: 400;
+  }
+  .hairline {
+    background-image: linear-gradient(to right, transparent, var(--color-hairline) 20%, var(--color-hairline) 80%, transparent);
+    height: 1px;
+  }
+  .hairline-dark {
+    background-image: linear-gradient(to right, transparent, var(--color-hairline-dark) 20%, var(--color-hairline-dark) 80%, transparent);
+    height: 1px;
+  }
+  .bg-noise {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  }
+
+  /* ---- Glassmorphism ---- */
+  .glass {
+    background: linear-gradient(135deg, rgba(255,255,255,0.6), rgba(229,154,174,0.22));
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    border: 1px solid rgba(255,255,255,0.5);
+    box-shadow: var(--shadow-glass);
+  }
+  .glass-dark {
+    background: linear-gradient(135deg, rgba(43,24,16,0.55), rgba(229,154,174,0.14));
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    border: 1px solid rgba(255,255,255,0.14);
+    box-shadow: 0 8px 32px -8px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.08);
+  }
+  .glass-pink {
+    background: linear-gradient(135deg, rgba(251,217,226,0.75), rgba(255,255,255,0.35));
+    backdrop-filter: blur(16px) saturate(160%);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+    border: 1px solid rgba(255,255,255,0.6);
+  }
+  .blob {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(60px);
+    pointer-events: none;
+  }
+  .blob-pink {
+    background: radial-gradient(circle, rgba(229,154,174,0.55), transparent 70%);
+  }
+  .blob-gold {
+    background: radial-gradient(circle, rgba(201,169,97,0.45), transparent 70%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
