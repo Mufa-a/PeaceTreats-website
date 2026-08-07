@@ -48,7 +48,7 @@ export default function About() {
         </Reveal>
         <div className="flex flex-col justify-center gap-6">
           <SectionHeading
-            eyebrow="Since 2016"
+            eyebrow="Since 2026"
             title="A patisserie built on patience and detail"
           />
           <p className="text-balance leading-relaxed text-charcoal/70">
