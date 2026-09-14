@@ -2,6 +2,8 @@ import { useParams, Navigate, Link } from 'react-router-dom'
 import { CATEGORIES, cakesByCategory, categoryMeta, type CategorySlug } from '@/data/cakes'
 import { buildWhatsAppLink, categoryInquiryMessage, customCakeMessage } from '@/lib/whatsapp'
 import { useDocumentTitle } from '@/lib/useDocumentTitle'
+import { useStructuredData } from '@/lib/useStructuredData'
+import { buildCakeListStructuredData } from '@/lib/structuredData'
 import PhotoPlaceholder from '@/components/PhotoPlaceholder'
 import CakeCard from '@/components/CakeCard'
 import SealButton from '@/components/ui/SealButton'
@@ -22,6 +24,9 @@ export default function CategoryPage() {
   const cakes = isValid ? cakesByCategory(slug as CategorySlug) : []
 
   useDocumentTitle(meta.label, meta.description)
+  useStructuredData(
+    isValid && cakes.length > 0 ? buildCakeListStructuredData(cakes, `/cakes/${meta.slug}`, meta.label) : null
+  )
 
   if (!isValid) {
     return <Navigate to="/gallery" replace />

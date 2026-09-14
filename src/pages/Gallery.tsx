@@ -4,11 +4,14 @@ import PhotoPlaceholder from '@/components/PhotoPlaceholder'
 import CakeCard from '@/components/CakeCard'
 import SectionHeading from '@/components/ui/SectionHeading'
 import { useDocumentTitle } from '@/lib/useDocumentTitle'
+import { useStructuredData } from '@/lib/useStructuredData'
+import { buildCakeListStructuredData } from '@/lib/structuredData'
 
 type Filter = 'all' | CategorySlug
 
 export default function Gallery() {
   useDocumentTitle('Cake Gallery', 'Browse our full gallery of birthday, wedding, graduation, anniversary, and custom cakes.')
+  useStructuredData(buildCakeListStructuredData(CAKES, '/gallery', 'PeaceTreats Cake Gallery'))
   const [filter, setFilter] = useState<Filter>('all')
 
   const cakes = useMemo(() => {

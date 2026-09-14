@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
     <loc>https://peacetreats.netlify.app/</loc>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://images.pexels.com/photos/6054916/pexels-photo-6054916.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600</image:loc>
+      <image:title>PeaceTreats signature celebration cake, Nairobi</image:title>
+    </image:image>
   </url>
 
   <url>
@@ -14,21 +19,77 @@
   <url>
     <loc>https://peacetreats.netlify.app/gallery</loc>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://peacetreats.netlify.app/images/cakes/birthday-golden-drops.jpg</image:loc>
+      <image:title>Golden Drops Birthday Cake by PeaceTreats</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://peacetreats.netlify.app/images/cakes/birthday-august-babies.jpg</image:loc>
+      <image:title>Sprinkle Celebration Cake by PeaceTreats</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://peacetreats.netlify.app/images/cakes/birthday-gold-dots.jpg</image:loc>
+      <image:title>Golden Dot Elegance Cake by PeaceTreats</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://peacetreats.netlify.app/images/cakes/graduation-golden-cap.jpg</image:loc>
+      <image:title>Golden Cap Graduation Cake by PeaceTreats</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://peacetreats.netlify.app/images/cakes/graduation-ombre.jpg</image:loc>
+      <image:title>Ombre Graduation Cake by PeaceTreats</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://peacetreats.netlify.app/images/cakes/wedding-grand-table.jpg</image:loc>
+      <image:title>Grand Tier Wedding Display by PeaceTreats</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://peacetreats.netlify.app/images/cakes/custom-nurse-theme.jpg</image:loc>
+      <image:title>Career and Milestone Theme Cake by PeaceTreats</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://peacetreats.netlify.app/images/cakes/custom-word-for-sis.jpg</image:loc>
+      <image:title>Personalised Message Cake by PeaceTreats</image:title>
+    </image:image>
   </url>
 
   <url>
     <loc>https://peacetreats.netlify.app/cakes/birthday</loc>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://peacetreats.netlify.app/images/cakes/birthday-golden-drops.jpg</image:loc>
+      <image:title>Golden Drops Birthday Cake by PeaceTreats</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://peacetreats.netlify.app/images/cakes/birthday-august-babies.jpg</image:loc>
+      <image:title>Sprinkle Celebration Cake by PeaceTreats</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://peacetreats.netlify.app/images/cakes/birthday-gold-dots.jpg</image:loc>
+      <image:title>Golden Dot Elegance Cake by PeaceTreats</image:title>
+    </image:image>
   </url>
 
   <url>
     <loc>https://peacetreats.netlify.app/cakes/wedding</loc>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://peacetreats.netlify.app/images/cakes/wedding-grand-table.jpg</image:loc>
+      <image:title>Grand Tier Wedding Display by PeaceTreats</image:title>
+    </image:image>
   </url>
 
   <url>
     <loc>https://peacetreats.netlify.app/cakes/graduation</loc>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://peacetreats.netlify.app/images/cakes/graduation-golden-cap.jpg</image:loc>
+      <image:title>Golden Cap Graduation Cake by PeaceTreats</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://peacetreats.netlify.app/images/cakes/graduation-ombre.jpg</image:loc>
+      <image:title>Ombre Graduation Cake by PeaceTreats</image:title>
+    </image:image>
   </url>
 
   <url>
@@ -49,6 +110,14 @@
   <url>
     <loc>https://peacetreats.netlify.app/cakes/custom</loc>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://peacetreats.netlify.app/images/cakes/custom-nurse-theme.jpg</image:loc>
+      <image:title>Career and Milestone Theme Cake by PeaceTreats</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://peacetreats.netlify.app/images/cakes/custom-word-for-sis.jpg</image:loc>
+      <image:title>Personalised Message Cake by PeaceTreats</image:title>
+    </image:image>
   </url>
 
   <url>
