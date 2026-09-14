@@ -56,6 +56,7 @@ export default function Footer() {
             <p className="eyebrow text-gold-light">Studio</p>
             <Link to="/about" className="text-sm text-ivory/70 transition-colors hover:text-ivory">About</Link>
             <Link to="/gallery" className="text-sm text-ivory/70 transition-colors hover:text-ivory">Gallery</Link>
+            <Link to="/blog" className="text-sm text-ivory/70 transition-colors hover:text-ivory">Guides</Link>
             <Link to="/testimonials" className="text-sm text-ivory/70 transition-colors hover:text-ivory">Testimonials</Link>
             <Link to="/contact" className="text-sm text-ivory/70 transition-colors hover:text-ivory">Contact</Link>
           </div>

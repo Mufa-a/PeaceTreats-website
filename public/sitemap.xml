@@ -126,6 +126,26 @@
   </url>
 
   <url>
+    <loc>https://peacetreats.netlify.app/blog</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://peacetreats.netlify.app/blog/wedding-cake-prices-nairobi</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://peacetreats.netlify.app/blog/how-far-ahead-order-birthday-cake-nairobi</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://peacetreats.netlify.app/blog/choosing-a-cake-flavour-guide</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
     <loc>https://peacetreats.netlify.app/contact</loc>
     <priority>0.8</priority>
   </url>

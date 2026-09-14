@@ -8,6 +8,7 @@ const PRIMARY_LINKS = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
   { to: '/gallery', label: 'Gallery' },
+  { to: '/blog', label: 'Guides' },
   { to: '/testimonials', label: 'Testimonials' },
   { to: '/contact', label: 'Contact' },
 ]
