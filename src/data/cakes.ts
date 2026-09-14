@@ -89,6 +89,8 @@ export interface Cake {
   description: string
   flavours: string[]
   startingPrice?: number
+  /** Overrides the default "from KSh X" display, e.g. "KSh 1,800 / kg". */
+  priceLabel?: string
   tags?: string[]
   featured?: boolean
   palette: 'ganache' | 'rose' | 'gold' | 'sage'
@@ -99,25 +101,25 @@ export const CAKES: Cake[] = [
   // Birthday
   {
     id: 'bd-001',
-    name: 'Elegant Chocolate Birthday Cake',
+    name: 'Golden Drops Birthday Cake',
     category: 'birthday',
-    description: 'Dark chocolate sponge, whipped ganache, and a hand-piped gold-leaf number of your choice.',
-    flavours: ['Dark Chocolate', 'Salted Caramel', 'Hazelnut Praline'],
-    startingPrice: 6500,
+    description: 'Classic whipped-cream finish with a hand-piped gold drop border, butterflies, and your message on top.',
+    flavours: ['Vanilla', 'Chocolate', 'Flavour of choice'],
+    priceLabel: 'KSh 1,800 / kg',
     tags: ['Bestseller'],
     featured: true,
     palette: 'ganache',
-    image: 'https://images.pexels.com/photos/18131293/pexels-photo-18131293.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: '/images/cakes/birthday-golden-drops.jpg',
   },
   {
     id: 'bd-002',
-    name: 'Rose Gold Confetti Cake',
+    name: 'Sprinkle Celebration Cake',
     category: 'birthday',
-    description: 'Vanilla bean sponge studded with confetti, finished in a rose-gold buttercream drape.',
-    flavours: ['Vanilla Bean', 'Funfetti', 'Strawberry'],
-    startingPrice: 5800,
-    palette: 'rose',
-    image: 'https://images.pexels.com/photos/29957675/pexels-photo-29957675.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    description: 'Golden buttercream loaded with rainbow sprinkles \u2014 a joyful pick for shared or milestone birthdays.',
+    flavours: ['Vanilla', 'Funfetti', 'Flavour of choice'],
+    priceLabel: 'KSh 1,800 / kg',
+    palette: 'gold',
+    image: '/images/cakes/birthday-august-babies.jpg',
   },
   {
     id: 'bd-003',
@@ -143,15 +145,15 @@ export const CAKES: Cake[] = [
   // Wedding
   {
     id: 'wd-001',
-    name: 'Elegant Three-Tier Wedding Cake',
+    name: 'Grand Tier Wedding Display',
     category: 'wedding',
-    description: 'Classic three-tier silhouette in smooth buttercream, finished with cascading sugar florals.',
+    description: 'A full reception dessert table \u2014 a tall gold-and-navy tiered centrepiece surrounded by matching mini cakes.',
     flavours: ['Vanilla Bean', 'Champagne', 'Red Velvet'],
-    startingPrice: 32000,
+    priceLabel: 'KSh 35,000 for 12kg (scales up)',
     tags: ['Signature'],
     featured: true,
     palette: 'gold',
-    image: 'https://images.pexels.com/photos/34596959/pexels-photo-34596959.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: '/images/cakes/wedding-grand-table.jpg',
   },
   {
     id: 'wd-002',
@@ -187,24 +189,24 @@ export const CAKES: Cake[] = [
   // Graduation
   {
     id: 'gr-001',
-    name: 'Scholar\u2019s Cap Celebration Cake',
+    name: 'Golden Cap Graduation Cake',
     category: 'graduation',
-    description: 'A polished tribute cake topped with a hand-crafted sugar graduation cap.',
-    flavours: ['Chocolate Fudge', 'Vanilla Bean'],
-    startingPrice: 6800,
+    description: 'Rich gold buttercream finished with a stacked-books and graduation-cap topper, personalised for the graduate.',
+    flavours: ['Chocolate Fudge', 'Vanilla Bean', 'Flavour of choice'],
+    priceLabel: 'KSh 2,000 / kg',
     featured: true,
-    palette: 'ganache',
-    image: 'https://images.pexels.com/photos/6054916/pexels-photo-6054916.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    palette: 'gold',
+    image: '/images/cakes/graduation-golden-cap.jpg',
   },
   {
     id: 'gr-002',
-    name: 'Class of Honours Cake',
+    name: 'Ombre Graduation Cake',
     category: 'graduation',
-    description: 'Deep navy and gold detailing with your university crest hand-piped in royal icing.',
-    flavours: ['Red Velvet', 'Coffee Walnut'],
-    startingPrice: 7400,
-    palette: 'gold',
-    image: 'https://images.pexels.com/photos/33058061/pexels-photo-33058061.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    description: 'A coral-to-blue ombre buttercream finish with a graduate silhouette and cap topper, personalised with a name.',
+    flavours: ['Red Velvet', 'Coffee Walnut', 'Flavour of choice'],
+    priceLabel: 'KSh 2,000 / kg',
+    palette: 'rose',
+    image: '/images/cakes/graduation-ombre.jpg',
   },
   {
     id: 'gr-003',
@@ -330,12 +332,13 @@ export const CAKES: Cake[] = [
   },
   {
     id: 'cu-002',
-    name: 'Sculpted Showpiece Cake',
+    name: 'Career & Milestone Theme Cake',
     category: 'custom',
-    description: 'Hand-sculpted, structurally engineered cakes for brand launches, themed parties, and statement moments.',
+    description: 'Fully themed around your profession or passion \u2014 shown here in a nurse motif with edible icon toppers.',
     flavours: ['Any flavour, any design'],
-    palette: 'gold',
-    image: 'https://images.pexels.com/photos/6054916/pexels-photo-6054916.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    priceLabel: 'KSh 2,200 / kg',
+    palette: 'sage',
+    image: '/images/cakes/custom-nurse-theme.jpg',
   },
 ]
 

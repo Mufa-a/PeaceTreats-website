@@ -49,9 +49,9 @@ export default function CakeCard({ cake, index = 0 }: { cake: Cake; index?: numb
       <div className="flex flex-1 flex-col gap-3 p-6">
         <div className="flex items-start justify-between gap-3">
           <h3 className="text-xl leading-snug text-ganache">{cake.name}</h3>
-          {cake.startingPrice && (
+          {(cake.priceLabel || cake.startingPrice) && (
             <span className="whitespace-nowrap pt-1 text-sm font-semibold text-gold-deep">
-              from KSh {cake.startingPrice.toLocaleString()}
+              {cake.priceLabel ?? `from KSh ${cake.startingPrice!.toLocaleString()}`}
             </span>
           )}
         </div>
