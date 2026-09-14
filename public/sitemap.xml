@@ -17,6 +17,41 @@
   </url>
 
   <url>
+    <loc>https://peacetreats.netlify.app/cakes/birthday</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://peacetreats.netlify.app/cakes/wedding</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://peacetreats.netlify.app/cakes/graduation</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://peacetreats.netlify.app/cakes/anniversary</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://peacetreats.netlify.app/cakes/baby-shower</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://peacetreats.netlify.app/cakes/cupcakes</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://peacetreats.netlify.app/cakes/custom</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://peacetreats.netlify.app/testimonials</loc>
     <priority>0.7</priority>
   </url>
